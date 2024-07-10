@@ -1,1 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+:root{
+    --bg-body:#b1ced8;
+
+    --bg-logo:#399c7e;
+    --tit-logo:#ffffff;
+    --txt-logo:#7ebeab;
+
+    --bg-info:#ffffff;
+    --tit-info:#423434;
+    --txt-info:#9e9c9c;
+
+    --bg-input-radio:#f1f1f1;
+    --txt-input-radio:#5a4e4e;
+    --txt-radio:#4e4141;
+
+    --bg-btn:#33af8e;
+    --txt-btn:#ffffff; 
+
+    --font-family: "Lexend", sans-serif;
+    /* --font-optical-sizing: auto;
+    --font-weight: <weight>;
+    --font-style: normal; */
+}
+
+body{
+    height: 100vh;
+    background-color: var(--bg-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img{
+    width: 176px;
+    height: 179px;
+}
+
+.logo-h1{
+    color: var(--tit-logo);
+    font-family: var(--font-family);
+    font-size: 25px;
+    margin-bottom: 13px;
+}
+
+.logo-p{
+    color: var(--txt-logo);
+    padding: 0 35px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.info-h1{
+    color: var(--tit-info);
+    padding-top: 73px;
+    margin: 0;
+}
+
+.info-p{
+    color: var(--txt-info);
+    padding: 0 80px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+
+.bank-loans{
+    width: 716px;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-contenido{
+    width: 340px;
+    background-color: var(--bg-logo);
+    border-radius: 10px 0 0 10px;
+    align-content: center;
+    text-align: center;
+}
+
+.info-contenido{
+    width: 376px;
+    background-color: var(--bg-info);
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+}
+
+.form-contenido{
+    height: 205px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input{
+    width: 226px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: var(--bg-input-radio);
+    font-family: var(--font-family);
+    border: none;
+    outline: none;
+    color: var(--txt-input-radio);
+}
+
+.form-input::placeholder{
+    color: var(--txt-input-radio);
+}
+
+.form-input:focus,.form-input:valid{
+    padding-left: 20px;
+}
+
+.form-seleccion{
+    width: 226px;
+    height: 46px;
+    margin: 17px 0 19px 0;
+    border-radius: 5px;
+    background-color: var(--bg-input-radio);
+    color: var(--txt-input-radio);
+    font-family: var(--font-family);
+    padding-left: 20px;
+    border: none;
+    outline: none;
+
+    /*Cambiar imagen que viene por defecto*/
+    appearance: none; 
+    background-image: url(../img/desplegable.svg); 
+    background-repeat: no-repeat;
+    background-position: 180px center;
+    background-size: 25px;
+}
+
+.form-label{
+    color:var(--txt-input-radio);
+    font-family: var(--font-family);
+}
+
+.form-radio{
+    color: var(--txt-radio);
+    accent-color: var(--bg-btn);
+    margin: 0 140px 5px 0;
+    font-family: var(--font-family);
+}
+
+.btn-contenido{
+    margin: 38px 39px 0 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-back, .btn-next{
+    width: 100px;
+    height: 40px;
+    background-color: var(--bg-btn);
+    color: var(--txt-btn);
+    font-family: var(--font-family);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+
+    position: relative;
+}
+
+.btn-back:hover, .btn-next:hover{
+    background-color: var(--txt-btn);
+    color: var(--bg-btn);
+    border: 1px solid var(--bg-btn);
+}
+
+.btn-contenido img{
+    width: 20px;
+    height: 20px;
+    margin: 0 6px 0 6px;
+}
+
+.btn-back img{
+    position: absolute;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.btn-next img{
+    position: absolute;
+    right: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.img-hover:hover{
+    opacity: 0;
+}
 
